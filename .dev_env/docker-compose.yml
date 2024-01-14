@@ -1,0 +1,12 @@
+---
+version: '3'
+services:
+  webserver:
+    image: httpd:latest
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - ${HTTP_PORT}:80
+
+    volumes:
+      - ${WEB_ROOT}:/usr/local/apache2/htdocs/
+
