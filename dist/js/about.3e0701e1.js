@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkslowlorizz_github_io"]=self["webpackChunkslowlorizz_github_io"]||[]).push([[594],{5609:function(u,n,t){t.r(n),t.d(n,{default:function(){return h}});var i=t(6768);const o={class:"about"},r=(0,i.Lk)("h1",null,"This is an about page",-1),s=[r];function a(u,n){return(0,i.uX)(),(0,i.CE)("div",o,s)}var e=t(1241);const l={},c=(0,e.A)(l,[["render",a]]);var h=c}}]);
-//# sourceMappingURL=about.3e0701e1.js.map
