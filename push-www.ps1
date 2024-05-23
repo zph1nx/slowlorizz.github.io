@@ -5,6 +5,8 @@ try{
         Remove-Item -Path ".\docs" -Force -Recurse
     }
 
+    New-Item -Path ".\docs\css" -Type Directory
+    
     Get-ChildItem -Path ".\dist" | %{Copy-Item -Path $_.FullName -Destination ".\docs" -Recurse -Force}
 
     if (!$(Test-Path -Path ".\docs\CNAME")) {
