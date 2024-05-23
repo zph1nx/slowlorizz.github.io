@@ -1,8 +1,17 @@
 try{
     npm run build
-    git add --all
-    git commit -m "new dist"
-    git subtree push --prefix dist origin www 
+
+    if ($(Test-Path -Path ".\docs")) {
+        Remove-Item -Path ".\docs" -Force -Recurse
+    }
+
+    Get-ChildItem -Path ".\dist" | %{Copy-Item -Path $_.FullName -Destination ".\docs" -Recurse -Force}
+
+    if (!$(Test-Path -Path ".\docs\CNAME")) {
+        New-Item -Path ".\docs\CNAME" -Type File -Value "loris.kampus.ch" -Force
+    }
+
+    git add --all; git commit -m "push-www" --no-verify; git push
 }
 catch {
     throw $_.Exception.Message
