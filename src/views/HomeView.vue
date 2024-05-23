@@ -1,18 +1,50 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="homeView">
+    <h1>You RN:</h1>
+    <div id="face">
+      <img src="@/assets/face.jpg">
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+
 
 @Options({
   components: {
-    HelloWorld,
   },
 })
 export default class HomeView extends Vue {}
 </script>
+
+
+<style>
+
+.homeView {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+}
+
+h1 {
+  font-size: 3vw;
+  color: white;
+}
+
+#face {
+  width: 30vw;
+  height: 30vw;
+}
+
+#face img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+</style>
