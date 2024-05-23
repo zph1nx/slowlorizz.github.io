@@ -24,27 +24,37 @@ export default class HomeView extends Vue {}
 .homeView {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: black;
-}
-
-h1 {
-  font-size: 3vw;
-  color: white;
-}
-
-#face {
-  width: 30vw;
-  height: 30vw;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
 }
 
 #face img {
   max-width: 100%;
   max-height: 100%;
+}
+h1 {
+  font-size: 80px;
+  color: white;
+}
+
+#face {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1280px) {
+  /* For Tablet: */
+  
+  #face {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    max-width: 80vh;
+  }
 }
 
 </style>
