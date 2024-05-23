@@ -1,6 +1,6 @@
 <template>
   <div class="FaceView">
-    <h1>You lost the Game!</h1>
+    <h1>the Game</h1>
     <div id="face">
       <img src="@/assets/face.jpg">
     </div>
@@ -37,7 +37,7 @@ export default class FaceView extends Vue {}
   max-height: 100%;
 }
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: white;
 }
 
