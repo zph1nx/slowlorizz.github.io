@@ -1,6 +1,6 @@
 <template>
   <div class="FaceView">
-    <h1>You:</h1>
+    <h1>You lost the Game!</h1>
     <div id="face">
       <img src="@/assets/face.jpg">
     </div>
