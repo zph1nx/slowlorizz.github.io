@@ -1,5 +1,5 @@
 <template>
-  <div class="FaceView">
+  <div class="TheGameView">
     <h1>the Game</h1>
     <div id="face">
       <img src="@/assets/face.jpg">
@@ -15,13 +15,13 @@ import { Options, Vue } from 'vue-class-component';
   components: {
   },
 })
-export default class FaceView extends Vue {}
+export default class TheGameView extends Vue {}
 </script>
 
 
 <style>
 
-.FaceView {
+.TheGameView {
   display: flex;
   flex-direction: column;
   justify-content: center;

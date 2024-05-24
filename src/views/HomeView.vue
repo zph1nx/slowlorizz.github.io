@@ -1,5 +1,5 @@
 <template>
-  <div class="homeView">
+  <div class="HomeView">
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import { Options, Vue } from 'vue-class-component';
 })
 export default class HomeView extends Vue {
   mounted(): void {
-    this.$router.replace('/face');
+    this.$router.replace('/the-game');
   }
 }
 </script>
