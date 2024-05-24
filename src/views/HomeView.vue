@@ -6,7 +6,7 @@
 
         Unfortunately this site is currently in development.<br>
         <br>
-        In the Meantime you could play the Game<br>
+        In the Meantime you could play <router-link to="/fun/game" style="border-style: solid; border-color: white">the game</router-link><br>
         
       </div>
     </CrtDisplay>
@@ -23,11 +23,11 @@ import CrtDisplay from '@/components/crt/CrtDisplay.vue';
   },
 })
 export default class HomeView extends Vue {
-  mounted(): void {
+  /*mounted(): void {
     if (process.env.NODE_ENV !== 'development') {
       this.$router.replace('/fun/game');
     }
-  }
+  }*/
 }
 </script>
 
