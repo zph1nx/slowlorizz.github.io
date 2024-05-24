@@ -13,7 +13,7 @@ import { Options, Vue } from 'vue-class-component';
 })
 export default class HomeView extends Vue {
   mounted(): void {
-    this.$router.replace('/the-game');
+    this.$router.replace('/fun/game');
   }
 }
 </script>

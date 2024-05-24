@@ -152,6 +152,8 @@ function _Publish() {
         _Build_WWW -ProjectPath $ProjectPath -CNAME $CNAME
         _Git_Push_All -Pull
         _Git_Merge -Branch $Branch -To $WWWBranch
+        _Git_Switch_Branch -To $Branch
+        _Git_Push_All -Pull
     }
     catch {
         Write-Host "[ERROR](_Publish_Dev): $($_.Exception.Message)"
