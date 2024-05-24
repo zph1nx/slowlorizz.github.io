@@ -19,7 +19,9 @@ export default class TheGameView extends Vue {}
 </script>
 
 
-<style>
+<style scoped>
+@import url(../../assets/fonts/Press_Start_2P/press_start_2p.css);
+
 
 .TheGameView {
   display: flex;
@@ -30,15 +32,18 @@ export default class TheGameView extends Vue {}
   height: 100vh;
   width: 100%;
   margin: 0;
+  background-color: black;
 }
 
 #face img {
   max-width: 100%;
   max-height: 100%;
 }
+
 h1 {
   font-size: 60px;
   color: white;
+  font-family: 'press-start-2p';
 }
 
 #face {
@@ -46,8 +51,21 @@ h1 {
   height: auto;
 }
 
-@media only screen and (min-width: 1280px) {
-  /* For Tablet: */
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  #face {
+    max-height: 95vw;
+    max-width: 95vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
   
   #face {
     width: 100%;

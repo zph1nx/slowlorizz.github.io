@@ -13,12 +13,14 @@ import { Options, Vue } from 'vue-class-component';
 })
 export default class HomeView extends Vue {
   mounted(): void {
-    this.$router.replace('/fun/game');
+    if (process.env.NODE_ENV !== 'development') {
+      this.$router.replace('/fun/game');
+    }
   }
 }
 </script>
 
 
-<style>
+<style scoped>
 
 </style>

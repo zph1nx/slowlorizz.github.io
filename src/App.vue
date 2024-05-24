@@ -3,7 +3,7 @@
 </template>
 
 <style lang="scss">
-html, body {
+html {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -11,17 +11,15 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-html {
+  background-color: white;
   height: 100vh;
   width: 100vw;
 }
 
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
 }
-
 
 @media only screen and (max-width: 600px) {
   /* For Mobile: */
@@ -52,13 +50,33 @@ body {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1000px) {
   /* For Tablet: */
   body {
     height: 100vh;
-    width: 1280px;
-    min-width: 1280px;
-    max-width: 1280px;
+    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For Tablet: */
+  body {
+    height: 100vh;
+    width: 1200px;
+    min-width: 1200px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /* For Tablet: */
+  body {
+    height: 100vh;
+    width: 1400px;
+    min-width: 1400px;
+    max-width: 1400px;
   }
 }
 </style>
