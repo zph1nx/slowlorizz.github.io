@@ -11,7 +11,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: rgb(5, 6, 6);
   height: 100vh;
   width: 100vw;
 }
@@ -34,9 +34,9 @@ body {
   /* For Tablet: */
   body {
     height: 100vh;
-    width: 600px;
-    min-width: 600px;
-    max-width: 600px;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
   }
 }
 

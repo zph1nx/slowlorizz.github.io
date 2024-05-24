@@ -45,14 +45,16 @@ export default class HomeView extends Vue {
   width: 100%;
   margin: 0;
   overflow: hidden;
+  box-shadow: rgb(197, 197, 197) ;
 }
 
 #crt_display {
-  height: fit-content;
-  width: 75%;
+  height: 100%;
+  width: 100%;
   border-radius: 20px;
   font-size: 30px;
   letter-spacing: 1px;
+  display: block;
 }
 
 #contents {
@@ -71,13 +73,10 @@ export default class HomeView extends Vue {
 
 @media only screen and (max-width: 600px) {
   #crt_display {
-    width: 100%;
+    width: 100vw;
     font-size: 20px;
   }
 
-  .HomeView {
-    background-color: black;
-  }
 
   #contents > h2 {
     font-size: 25px;
@@ -86,12 +85,8 @@ export default class HomeView extends Vue {
 
 @media only screen and (max-width: 800px) {
   #crt_display {
-    width: 100%;
+    width: 100vw;
     font-size: 25px;
-  }
-
-  .HomeView {
-    background-color: black;
   }
 
   #contents > h2 {
