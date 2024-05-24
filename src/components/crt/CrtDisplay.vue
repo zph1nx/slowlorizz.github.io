@@ -28,14 +28,14 @@ export default class CrtDisplay extends Vue {
 
 <style scoped>
 @import url(../../assets/styles/aleclownes_crt.css);
-@import url(../../assets/fonts/Press_Start_2P/press_start_2p.css);
+@import url(../../assets/fonts/Jersey_10/jersey_10.css);
 
 .CrtDisplay {
   color: white;
   position: relative;
   background: radial-gradient(at center, 
   #504656 10%, 
-  #232323 100%)
+  #171717 100%)
 
   /*background: radial-gradient(at center, 
   #50506b 0%, 
@@ -44,8 +44,9 @@ export default class CrtDisplay extends Vue {
 
 .crt, .crt:before, .crt:after {
   border-radius: inherit;
-  font-family: 'press-start-2p';
+  font-family: 'jersey-10';
   font-size: inherit;
+  letter-spacing: inherit;
 }
 
 </style>

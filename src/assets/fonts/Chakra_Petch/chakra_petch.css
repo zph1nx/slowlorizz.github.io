@@ -1,10 +1,69 @@
 @font-face {
     font-family: 'chakra-petch';
-    src: url(Jersey10-Regular.ttf);
+    src: url(ChakraPetch-Bold.ttf);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-BoldItalic.ttf);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'chakra-petch-regular';
+    src: url(ChakraPetch-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-LightItalic.ttf);
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-Medium.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
-/*
-TODO: Rest font style include
-*/
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-MediumItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'chakra-petch-regular';
+    src: url(ChakraPetch-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-SemiBold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chakra-petch';
+    src: url(ChakraPetch-SemiBoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
