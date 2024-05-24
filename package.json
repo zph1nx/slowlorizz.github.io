@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-www": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./.dev-scripts/build-www.ps1",
-    "lint": "vue-cli-service lint"
+    "build-www": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./.dev-tools/npm-scripts/build-www.ps1",
+    "lint": "vue-cli-service lint",
+    "publish": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./.dev-tools/npm-scripts/publish.ps1"
   },
   "dependencies": {
     "core-js": "^3.8.3",
