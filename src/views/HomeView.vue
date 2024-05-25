@@ -4,11 +4,9 @@
       <div id="contents">
         <h2>Hello Stranger</h2>
 
-        Unfortunately this site is currently in development.<br>
+        Do you want to play a game?<br>
         <br>
-        In the Meantime you could play <br>
-        <br>
-        <router-link to="/fun/game" style="border-style: solid; border-color: white; padding: 6px; color: white;">a game</router-link>
+        <router-link to="/fun/game" style="border-style: solid; border-color: white; padding: 6px; color: white; text-decoration: none;">PLAY</router-link>
         
       </div>
     </CrtDisplay>
@@ -42,7 +40,7 @@ export default class HomeView extends Vue {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   overflow: hidden;
   box-shadow: rgb(197, 197, 197) ;
@@ -51,58 +49,58 @@ export default class HomeView extends Vue {
 #crt_display {
   height: 100%;
   width: 100%;
-  border-radius: 20px;
-  font-size: 30px;
+  font-size: 45px;
   letter-spacing: 1px;
   display: block;
+  position: relative;
 }
 
 #contents {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 20px;
+  pa
 }
 
 #contents > h2 {
+  font-size: 50;
   letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 600px) {
   #crt_display {
-    width: 100vw;
-    font-size: 20px;
+    font-size: 30px;
   }
 
 
   #contents > h2 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 800px) {
   #crt_display {
-    width: 100vw;
-    font-size: 25px;
+    font-size: 35px;
   }
 
   #contents > h2 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   /* For Tablet: */
   #crt_display {
-    width: 75%;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   #contents > h2 {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 

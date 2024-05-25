@@ -1,7 +1,7 @@
 <template>
   <div class="CrtDisplay">
-    <div class="crt" :style="{padding: content_padding}">
-      <slot id="contents"></slot>
+    <div class="crt">
+      <slot></slot>
       <!--<div class="scanline"></div>
       <div class="terminal"></div>-->
     </div>
@@ -51,6 +51,8 @@ export default class CrtDisplay extends Vue {
   font-family: 'jersey-10';
   font-size: inherit;
   letter-spacing: inherit;
+  height: 100%;
+  width: 100%;
 }
 
 </style>
