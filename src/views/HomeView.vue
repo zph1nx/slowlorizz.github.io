@@ -57,14 +57,14 @@ export default class HomeView extends Vue {
 
 #contents {
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding-left: 20px;
-  pa
+  padding-right: 20px;
 }
 
 #contents > h2 {
