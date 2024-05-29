@@ -30,9 +30,9 @@ export default class TheGameView extends Vue {}
   align-items: center;
   overflow: hidden;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
-  background-color: black;
+  background-color: #000000;
 }
 
 #face img {

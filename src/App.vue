@@ -11,7 +11,6 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(5, 6, 6);
   height: 100vh;
   width: 100vw;
 }

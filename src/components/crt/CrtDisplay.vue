@@ -1,9 +1,9 @@
 <template>
-  <div class="CrtDisplay">
+  <div :class="{CrtDisplay: true}">
     <div class="crt">
-      <slot id="content"></slot>
-      <!--<div class="scanline"></div>
-      <div class="terminal"></div>-->
+      <div id="content_wrapper">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -11,18 +11,11 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-
-
 @Options({
   props: {
-    content_padding: {
-      type: String,
-      default: "10px"
-    }
   }
 })
 export default class CrtDisplay extends Vue {
-  content_padding!: string
 }
 </script>
 
@@ -31,12 +24,12 @@ export default class CrtDisplay extends Vue {
 @import url(../../assets/fonts/Jersey_10/jersey_10.css);
 
 .CrtDisplay {
-  color: white;
+  color: #FFFFFF;
   position: relative;
-  background: radial-gradient(at center, 
-  #313535 0%, 
-  #222628 50%,
-  #0f1013 100%)
+  background: radial-gradient(at center,  
+    #131516 0%,
+    #0f1012 60%,
+    #000000 100%)
 
   /*background: radial-gradient(at center, 
   #504656 10%, 
@@ -56,9 +49,13 @@ export default class CrtDisplay extends Vue {
   width: 100%;
 }
 
-#content {
+#content_wrapper {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 </style>

@@ -1,17 +1,14 @@
 <template>
   <div class="HomeView">
     <CrtDisplay id="crt_display" content_padding="20px">
-      <div id="contents_wrapper">
-        <div id="contents">
-          <h2>Hello Stranger</h2>
+      <div id="contents">
+        <h2>Hello Stranger</h2>
 
-          Wanna play a game?<br>
-          <br>
-          <router-link to="/fun/game" style="border-style: solid; border-color: white; padding: 0px 10px; color: #313535; text-shadow: none; border-radius: 50px; background-color: white; text-decoration: none;">PLAY</router-link>
-          
-        </div>  
-      </div>
-      
+        Wanna play a game?<br>
+        <br>
+        <router-link to="/fun/game" class="crt_box_item" style="border-style: solid; border-color: white; padding: 0px 10px; color: #313535; text-shadow: none; border-radius: 50px; background-color: white; text-decoration: none;">PLAY</router-link>
+        
+      </div>  
     </CrtDisplay>
   </div>
 </template>
@@ -36,6 +33,7 @@ export default class HomeView extends Vue {
 
 
 <style scoped>
+@import url(../assets/styles/aleclownes_crt.css);
 
 .HomeView {
   display: flex;
@@ -46,7 +44,6 @@ export default class HomeView extends Vue {
   width: 100vw;
   margin: 0;
   overflow: hidden;
-  box-shadow: rgb(197, 197, 197) ;
 }
 
 #crt_display {
@@ -56,15 +53,6 @@ export default class HomeView extends Vue {
   letter-spacing: 1px;
   display: block;
   position: relative;
-}
-
-#contents_wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #contents {
