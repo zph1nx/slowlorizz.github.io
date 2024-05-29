@@ -1,14 +1,17 @@
 <template>
   <div class="HomeView">
     <CrtDisplay id="crt_display" content_padding="20px">
-      <div id="contents">
-        <h2>Hello Stranger</h2>
+      <div id="contents_wrapper">
+        <div id="contents">
+          <h2>Hello Stranger</h2>
 
-        Do you want to play a game?<br>
-        <br>
-        <router-link to="/fun/game" style="border-style: solid; border-color: white; padding: 6px; color: white; text-decoration: none;">PLAY</router-link>
-        
+          Wanna play a game?<br>
+          <br>
+          <router-link to="/fun/game" style="border-style: solid; border-color: white; padding: 0px 10px; color: #313535; text-shadow: none; border-radius: 50px; background-color: white; text-decoration: none;">PLAY</router-link>
+          
+        </div>  
       </div>
+      
     </CrtDisplay>
   </div>
 </template>
@@ -55,16 +58,22 @@ export default class HomeView extends Vue {
   position: relative;
 }
 
-#contents {
+#contents_wrapper {
   height: 100%;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#contents {
+  min-height: fit-content;
+  max-height: 100%;
+  min-width: fit-content;
+  max-width: 100%;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 40px;
 }
 
 #contents > h2 {

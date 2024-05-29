@@ -1,7 +1,7 @@
 <template>
   <div class="CrtDisplay">
     <div class="crt">
-      <slot></slot>
+      <slot id="content"></slot>
       <!--<div class="scanline"></div>
       <div class="terminal"></div>-->
     </div>
@@ -34,8 +34,9 @@ export default class CrtDisplay extends Vue {
   color: white;
   position: relative;
   background: radial-gradient(at center, 
-  #42354a 10%, 
-  #101113 100%)
+  #313535 0%, 
+  #222628 50%,
+  #0f1013 100%)
 
   /*background: radial-gradient(at center, 
   #504656 10%, 
@@ -51,6 +52,11 @@ export default class CrtDisplay extends Vue {
   font-family: 'jersey-10';
   font-size: inherit;
   letter-spacing: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+#content {
   height: 100%;
   width: 100%;
 }
