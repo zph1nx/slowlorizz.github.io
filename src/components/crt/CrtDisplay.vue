@@ -26,18 +26,11 @@ export default class CrtDisplay extends Vue {
 .CrtDisplay {
   color: #FFFFFF;
   position: relative;
-  background: radial-gradient(at center,  
+  /*background: radial-gradient(at center,  
     #131516 0%,
     #0f1012 60%,
-    #000000 100%)
+    #000000 100%)*/
 
-  /*background: radial-gradient(at center, 
-  #504656 10%, 
-  #171717 100%)*/
-
-  /*background: radial-gradient(at center, 
-  #50506b 0%, 
-  #232323 100%)*/
 }
 
 .crt, .crt:before, .crt:after {

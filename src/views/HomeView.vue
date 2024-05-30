@@ -39,6 +39,13 @@ export default class HomeView extends Vue {
   width: 100vw;
   margin: 0;
   overflow: hidden;
+  background: radial-gradient(at center,  
+  rgb(19, 21, 22, 0.45) 0%,
+  rgb(15, 16, 18, 0.45) 60%,
+  rgb(0, 0, 0, 0.45) 100%), url(../assets/img/Retro_BG.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #crt_display {
