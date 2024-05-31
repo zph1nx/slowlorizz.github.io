@@ -1,5 +1,6 @@
 <template>
-  <div class="HomeView">
+  <PageLoader v-show="!loaded" />
+  <div class="HomeView" v-show="loaded">
     <CrtDisplay id="crt_display" content_padding="20px">
       <div id="contents">
         <h2>Hello Stranger</h2>
@@ -16,13 +17,28 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import CrtDisplay from '@/components/crt/CrtDisplay.vue';
+import PageLoader from '@/components/loaders/PageLoader.vue'
 
 @Options({
   components: {
     CrtDisplay,
+    PageLoader,
   },
 })
 export default class HomeView extends Vue {
+  loaded = false;
+
+  beforeCreate(): void {
+      this.loaded = false;
+  }
+
+  beforeMount(): void {
+      this.loaded = false;
+  }
+
+  mounted() {
+    this.loaded = true;
+  }
 }
 </script>
 
@@ -69,6 +85,7 @@ export default class HomeView extends Vue {
 #contents > h2 {
   font-size: 50;
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -78,7 +95,7 @@ export default class HomeView extends Vue {
 
 
   #contents > h2 {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 
@@ -88,7 +105,7 @@ export default class HomeView extends Vue {
   }
 
   #contents > h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -99,7 +116,7 @@ export default class HomeView extends Vue {
   }
 
   #contents > h2 {
-    font-size: 45px;
+    font-size: 55px;
   }
 }
 
